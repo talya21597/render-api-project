@@ -1,0 +1,22 @@
+{
+  "name": "render-api-project",
+  "version": "1.0.0",
+  "description": "Node Express app to list Render services",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "render",
+    "api",
+    "express"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.13.2",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2"
+  }
+}
