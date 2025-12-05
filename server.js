@@ -31,15 +31,8 @@ app.get('/services', async (req, res) => {
       httpsAgent: httpsAgent
     });
 
-    // Format the response - keep only important fields
-    const services = response.data.map(item => ({
-      name: item.service.name,
-      url: item.service.serviceDetails.url,
-      status: item.service.suspended
-    }));
-
-    // Return the formatted JSON response
-    res.json(services);
+    // Return the JSON response
+    res.json(response.data);
 
   } catch (error) {
     console.error('Error fetching Render services:', error);
